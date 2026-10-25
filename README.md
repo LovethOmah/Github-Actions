@@ -101,12 +101,12 @@ Connect the AWS CLI to your account:
 aws configure
 ```
 
-Create the cluster with the Terraform code in [EKS-Terraform](https://github.com/LovethOmah/EKS-Configuration-Terraform
-):
+
+Create the cluster with the Terraform code in [EKS-Configuration-Terraform](https://github.com/LovethOmah/EKS-Configuration-Terraform):
 
 ```bash
-git clone https://github.com/LovethOmah/EKS-Terraform.git
-cd EKS-Terraform
+git clone https://github.com/LovethOmah/EKS-Configuration-Terraform.git
+cd EKS-Configuration-Terraform
 terraform init
 terraform apply
 ```
