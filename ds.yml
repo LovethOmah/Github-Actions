@@ -22,7 +22,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: "Test@123"
         - name: MYSQL_DATABASE
-          value: "bankappdb"
+          value: "fin_appdb"
         ports:
         - containerPort: 3306
           name: mysql
@@ -42,25 +42,26 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp
+  name: fin-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bankapp
+      app: fin-app
   template:
     metadata:
       labels:
-        app: bankapp
+        app: fin-app
     spec:
       containers:
-      - name: bankapp
-        image: adijaiswal/bankapp:latest
+      - name: fin-app
+        image: lovethomah/test-project:latest
+
         ports:
         - containerPort: 8080
         env:
         - name: SPRING_DATASOURCE_URL
-          value: jdbc:mysql://mysql-service:3306/bankappdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+          value: jdbc:mysql://mysql-service:3306/fin_appdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
         - name: SPRING_DATASOURCE_USERNAME
           value: root
         - name: SPRING_DATASOURCE_PASSWORD
@@ -70,11 +71,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bankapp-service
+  name: fin-app-service
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: bankapp
+    app: fin-app
