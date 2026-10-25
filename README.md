@@ -161,28 +161,29 @@ Delete the app before running `terraform destroy`. The load balancer Kubernetes 
 
 The pipeline was built one stage at a time. See the [commit history](https://github.com/LovethOmah/Github-Actions_CICD_EKS/commits/main) for how each job was added.
 
-```
+## Screenshots
+
 <img width="1463" height="773" alt="Screenshot 2026-10-25 at 15 22 25" src="https://github.com/user-attachments/assets/3725be08-d55b-4de0-aaad-67fcac8cf849" />
-```
 
-```
+
+
 <img width="1453" height="724" alt="Screenshot 2026-10-25 at 15 10 25" src="https://github.com/user-attachments/assets/431f41d4-f6ff-4dfd-87a5-264ba84d4721" />
-```
 
-```
+
+
 <img width="1472" height="474" alt="Screenshot 2026-10-25 at 15 03 12" src="https://github.com/user-attachments/assets/34d17526-7368-4466-8c0a-6e15913833b8" />
-```
 
-```
+
+
 <img width="1461" height="487" alt="Screenshot 2026-10-25 at 15 02 05" src="https://github.com/user-attachments/assets/16bb5d59-6761-449e-99a3-9f5ca309402a" />
-```
-```
-<img width="1395" height="756" alt="Screenshot 2026-10-25 at 14 54 01" src="https://github.com/user-attachments/assets/46bfbb31-bb5a-431e-baf7-ea9dd0a8e27e" />
-```
 
-```
+
+<img width="1395" height="756" alt="Screenshot 2026-10-25 at 14 54 01" src="https://github.com/user-attachments/assets/46bfbb31-bb5a-431e-baf7-ea9dd0a8e27e" />
+
+
+
 <img width="1351" height="827" alt="Screenshot 2026-10-25 at 14 49 53" src="https://github.com/user-attachments/assets/a731806a-eb55-4683-b86f-6ee1042cbcbf" />
-```
+
 
 
 
